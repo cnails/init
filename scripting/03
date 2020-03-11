@@ -1,0 +1,3 @@
+echo 'type city: >> '
+read city
+curl wttr.in/$city | head -7

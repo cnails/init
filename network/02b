@@ -1,0 +1,1 @@
+arp -a -n | awk '{print $2}' | cut -c2-20 | rev | cut -c2-20 | rev

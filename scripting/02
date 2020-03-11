@@ -1,0 +1,11 @@
+echo "whom to remove, lord?"
+read user
+
+exist = 'cut -d ':' -f1 /etc/passwd | grep $user'
+if ["$exist" != "$NULL"]; then
+	userdel -r $user
+fi
+	echo "$user was destroyed, sir"
+else
+	echo "$user not found :("
+fi

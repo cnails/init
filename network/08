@@ -1,0 +1,5 @@
+#host slash16.org | grep 'address' | awk '{print $4}' | head -n1
+#whois 13.33.242.215
+
+Amazon
+
